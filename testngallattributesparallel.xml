@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suiteallattributesparallel">
+  <test thread-count="5" parallel="classes" name="Testallattributesparallel" verbose='5'>
+    <parameter name ='browser' value="Chrome" > </parameter>
+   <parameter name ='url' value="http://leaftaps.com/opentaps/" > </parameter>
+   <parameter name ='username' value="DemoSalesManager" > </parameter>
+   <parameter name ='password' value="crmsfa" > </parameter>
+    <classes>
+      <class name="week6.day1.DuplicateLeadday1"/>
+      <class name="week6.day1.MergeLeadday1"/>
+      <class name="week6.day1.CreateLeadday1"/>
+    </classes>
+  </test> <!-- Testallattributesparallel -->
+</suite> <!-- Suiteallattributesparallel -->
